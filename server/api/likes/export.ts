@@ -11,5 +11,5 @@ export default defineEventHandler(async event => {
       as: 'track_track'
     },
     where: { user: user.user.id }
-  })).map(x => x.track_track.name)
+  })).map(x => x.track_track.slug)
 })
